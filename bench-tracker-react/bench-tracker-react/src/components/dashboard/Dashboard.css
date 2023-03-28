@@ -1,0 +1,218 @@
+.brillioimage{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  bottom:0px;
+
+}
+/* .svgwavebottom{
+  position:relative;
+  bottom:0;
+} */
+
+.footerclass{
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+}
+.typewritereff {
+    font-family: sans-serif;
+    font-weight:5;
+    font-size: 1.7rem;
+  /*  text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center; */
+    /* min-height:100vh; */
+     /* background:green;  */
+    }
+
+
+/* img{
+    padding-top: 20%;
+    margin-top: 10cm;
+} */
+
+
+/* input[type="submit"],
+/**/
+.btn {
+  font-family: sans-serif;
+  position: relative;
+  background: linear-gradient(135deg, #cf4c5c 0%,#fd3f6e 100%);
+  color: rgb(70, 63, 63);
+   /* margin-bottom: 220px; */
+   text-transform: uppercase;
+  border: none;  
+  /* margin-top: 20px; */
+  margin-left: 30px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 60;
+  letter-spacing: 3px;
+  display: inline;
+  appearance: none;
+  border-radius: 4px;
+  width: 15%;
+  font-weight: normal;
+  transition: 0.3s all; 
+} 
+
+/* .buttonCustom{
+    background: #ec5990;
+} 
+
+ */
+input{
+    /* background: #4d4c94; */
+    background: linear-gradient(135deg, #8019C6 0%,#408ab4 100%);
+    border: none;  
+    /* padding: 10px; */
+    padding: 5px 10px;
+    position: relative;
+    font-size: 12px;
+    /* font-weight: 60; */
+
+    letter-spacing: .5px;
+    /* display: inline; */
+    display: inline-block;
+    appearance: none;
+    border-radius: 4px;
+    /* width: 30%; */
+    width: 90%;
+    font-weight: normal;
+    transition: 0.3s all; 
+
+    /* extra added css */
+    cursor: default;
+    user-select: none;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input[type="file"]{
+  width: 30% !important;
+}
+
+.MuiTableCell-head:not(:last-child){
+  width: 9%!important;
+}
+.MuiTableRow-root,
+.MuiTableCell-root{
+  padding: 10px 5px!important;
+  text-align: center!important;
+}
+
+@media only screen and (min-width:280px) {
+
+  /* .headline{
+    font-size: 5px;
+  } */
+  /* strong{
+    font-size: 2px !important;
+  } */
+
+  .btn {
+    font-family: sans-serif;
+    position: relative;
+    background: linear-gradient(135deg, #cf4c5c 0%,#fd3f6e 100%);
+    color: rgb(70, 63, 63);
+     /* margin-bottom: 220px; */
+     text-transform: uppercase;
+    border: none;  
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 60;
+    letter-spacing: 3px;
+    display: inline;
+    appearance: none;
+    border-radius: 4px;
+    width: 36%;
+    font-weight: normal;
+    transition: 0.3s all; 
+  } 
+
+  .typewritereff {
+    font-family: sans-serif;
+    font-weight:5;
+    font-size: 1.7rem;
+  /*  text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center; */
+    /* min-height:100vh; */
+     /* background:green;  */
+    }
+
+    input[type="file"]{
+      width: 67% !important;
+    }
+}
+
+
+@media only screen and (min-width:320px) {
+  .btn {
+    font-family: sans-serif;
+    position: relative;
+    background: linear-gradient(135deg, #cf4c5c 0%,#fd3f6e 100%);
+    color: rgb(70, 63, 63);
+     /* margin-bottom: 220px; */
+     text-transform: uppercase;
+    border: none;  
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 60;
+    letter-spacing: 3px;
+    display: inline;
+    appearance: none;
+    border-radius: 4px;
+    width: 30%;
+    font-weight: normal;
+    transition: 0.3s all; 
+  } 
+
+  .typewritereff {
+    font-family: sans-serif;
+    font-weight:5;
+    font-size: 1.7rem;
+  /*  text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center; */
+    /* min-height:100vh; */
+     /* background:green;  */
+    }
+
+    input[type="file"]{
+      width: 40% !important;
+    }
+}
+
+@media only screen and (min-width:768px) {
+  .btn {
+    font-family: sans-serif;
+    position: relative;
+    background: linear-gradient(135deg, #cf4c5c 0%,#fd3f6e 100%);
+    color: rgb(70, 63, 63);
+     /* margin-bottom: 220px; */
+     text-transform: uppercase;
+    border: none;  
+    /* margin-top: 20px; */
+    margin-left: 30px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 60;
+    letter-spacing: 3px;
+    display: inline;
+    appearance: none;
+    border-radius: 4px;
+    width: 28%;
+    font-weight: normal;
+    transition: 0.3s all; 
+  } 
+}

@@ -1,0 +1,180 @@
+.sidebar {
+    position: relative;
+    top: 0;
+    // left: 0 !important;
+    height: 100vh;
+    margin-right: 30px;
+    width: 320px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+  
+    @media Only screen and (max-width: 768px) {
+      // display: none;
+      width: 100%;
+      height: 105px;
+      // position: relative;
+      display: inline-table;
+  
+      .sidebar__menu__item {
+        float: left;
+      }
+      .sidebar__menu {
+      //   position: relative;
+      display: none;
+      left: 0;
+      }
+  
+      sidebar__menu {
+
+        //   position: relative;
+    
+        display: none !important;
+    
+        left: 0;
+    
+        }
+    
+        .mobile-menu-icon{
+    
+          display: block !important;
+    
+            position: absolute;
+    
+            font-size: 30px;
+    
+            color: white;
+    
+            background-color: black;
+    
+            border: none;
+    
+            outline: none;
+    
+            top: 40px;
+    
+            right: 25px;
+    
+        }
+      &__logo {
+          display: flex !important;
+          margin-left: 10px;
+          place-content: space-between;
+        }
+      // .sidebar__menu__item__text{
+      //     float: left !important;
+      // }
+    }
+
+    .mobile-menu-icon{
+
+      display: none;
+  
+    }
+  
+    &__logo {
+      display: grid;
+      place-items: center;
+      height: 120px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Bebas Neue", sans-serif;
+    }
+  
+    // &__full-screen bg-gradient-cold {
+    //     display: flex;
+    //     justify-content: baseline;
+    //     align-items: baseline;
+    //     position:absolute;
+    //     padding: 30px;
+    // }
+  
+    &__menu {
+      position: relative;
+  
+      &__item {
+        display: flex;
+        align-items: center;
+        place-content: flex-start;
+        padding: 1rem 3rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #2193dfe8;
+        transition: color 0.3s ease-in-out;
+  
+        &.active {
+          color: #fff;
+        }
+  
+        &__icon {
+          margin-right: 1rem;
+  
+          i {
+            font-size: 1.75rem;
+          }
+        }
+      }
+  
+      &__indicator {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: calc(100% - 40px);
+        border-radius: 10px;
+        background-color: #f57723;
+        z-index: -1;
+        transform: translateX(-50%);
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  
+  
+  
+  //  .full-screen {
+  //     display: flex;
+  //     justify-content: baseline;
+  //     align-items: baseline;
+  //     position:absolute;
+  //     padding: 30px;
+  //     // to cover the whole page
+  
+  //   }
+  
+  //   //
+  //   // Gradient system
+  //   //
+  //   $gradients: () !default;
+  //   $gradients: map-merge((
+  //       chill: linear-gradient(135deg, #09e485 0%,#0291e3 100%),
+  //       warm: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%),
+  //       hot: linear-gradient(135deg, #F9445A 0%,#FD803F 100%),
+  //       cold: linear-gradient(135deg, #8019C6 0%,#2F93CC 100%)
+  //   ), $gradients);
+  
+  //   // Gradient backgrounds
+  //   @mixin bg-gradient($parent, $gradient) {
+  //     #{$parent} {
+  //       background: $gradient;
+  //     }
+  //   }
+  
+  //   // Gradient text
+  //   @mixin text-gradient($parent, $gradient) {
+  //     #{$parent} {
+  //       background-image: $gradient;
+  //       color:transparent;
+  //       -webkit-background-clip: text;
+  //       background-clip: text;
+  //     }
+  //   }
+  
+  //   // Gradient Classes
+  //   @each $gradient, $value in $gradients {
+  //     @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+  //   }
+  
+  //   // Gradient Classes
+  //   @each $gradient, $value in $gradients {
+  //     @include text-gradient(".text-gradient-#{$gradient}", $value);
+  //   }
+  

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     background-color: #f0f0f0;
+//     color: #2b2b2b;
+//     font-family: 'Roboto', sans-serif;
+// }
+
+// a {
+//     text-decoration: none;
+//     color: unset;
+// }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #2b2b2b;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  html, body, .full-screen {
+    height: 100%;
+    width: 100%;
+  }
+
+  .appContainer{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 350px 1fr;
+    grid-column-gap: 20px;
+
+    
+  }
+  @media Only screen and (max-width:768px) {
+      
+    .appContainer{
+      display: block !important;
+      grid-template-columns: 1fr;
+      height: 123vh;
+      padding: 0 20px;
+    }
+   
+     }
+    
+  // .full-screen {
+  //   display: flex;
+  //   justify-content: baseline;
+  //   align-items: baseline;
+  //   top:0;
+  //   left:0;
+  //   width: 100%;
+  //   height: auto;
+  //   position: absolute;  // to cover the whole page
+  //   padding-right: 30px;
+  //  // padding: 30px;
+
+  //  @media Only screen and (max-width:768px) {
+  //    padding-right: 30px;
+  //    padding-left: 30px;
+  //    height: 100vh;
+  //  }
+  // }
+  .title {
+    font-weight: 800;
+    color: #fff;
+    font-size: 72px;
+    width: 30%;
+  }
+  //
+  // Gradient system
+  //
+  $gradients: () !default;
+  $gradients: map-merge((
+      chill: linear-gradient(135deg, #09e485 0%,#0291e3 100%),
+      warm: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%),
+      hot: linear-gradient(135deg, #F9445A 0%,#FD803F 100%),
+      cold: linear-gradient(135deg, #8019C6 0%,#2F93CC 100%)
+  ), $gradients);
+  
+  
+  // Gradient backgrounds
+  @mixin bg-gradient($parent, $gradient) {
+    #{$parent} {
+      background: $gradient;
+    }
+  }
+  
+  // Gradient text
+  @mixin text-gradient($parent, $gradient) {
+    #{$parent} {
+      background-image: $gradient;
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  
+  // Gradient Classes 
+  @each $gradient, $value in $gradients {
+    @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+  }
+  
+  // Gradient Classes 
+  @each $gradient, $value in $gradients {
+    @include text-gradient(".text-gradient-#{$gradient}", $value);
+  }
+  

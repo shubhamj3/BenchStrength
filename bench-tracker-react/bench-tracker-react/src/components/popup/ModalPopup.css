@@ -1,0 +1,173 @@
+.modalContainer {
+    display: block;
+    background-color: #fff;
+    position: fixed;
+    top: 5%;
+    left: 35%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 999;
+    width: 30vw;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 40%);
+    animation: animate .2s linear;
+}
+
+
+.backDrop{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0005;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+}
+
+.modalContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalContainer_header {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading_3{
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+.modalContainer_header .cancelBtn{
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid;
+    width: 30px;
+    background-color: #fff;
+    outline: none;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all .2s;
+}
+.modalContainer_header .cancelBtn:hover{
+    background-color: #eee;
+}
+
+.modalContainer_body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.inputContainer label{
+    color: #777;
+    letter-spacing: 1px;   
+}
+
+.inputContainer input{
+    text-align: left !important;
+    color: #444;
+    background: #fff;
+    border: 1px solid #999;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+    outline: none;
+    letter-spacing: 1px;
+    display: inline;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    font-weight: normal;
+    transition: 0.3s all;
+}
+
+.inputContainer select{
+    height: 40px;
+    outline: none;
+}
+
+
+.inputContainer input:focus,
+.inputContainer input:focus-visible{
+    border: 1px solid #333;
+
+}
+
+.modalContainer_footer {
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.modalContainer_footer button{
+    border: none;
+    background-color: #fd803f;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 10%);
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    transition: all .3s;
+}
+
+.modalContainer_footer button:hover{
+    opacity: .9;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1);
+    }    
+}
+
+@media only screen and (min-width: 360px) {
+    /* For mobile phones: */
+    .modalContainer {
+      top: 5%;
+      left: 15% !important;
+      width: 70vw;
+    }
+  
+    .backDrop{
+        height: 100vh;
+    }
+  }
+  
+  @media only screen and (min-width: 420px) {
+    /* For mobile phones: */
+    .modalContainer {
+      top: 5%;
+      left: 35% !important;
+      width: 30vw;
+    }
+  
+    .backDrop{
+        height: 100vh;
+    }
+    
+  }
